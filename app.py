@@ -22,7 +22,7 @@
 # wek = input('what is your weight? (lbs)): ')
 # ew = int(wek) * 0.45
 # print(ew)
-# coure = "python's coure for pro"
+# core = "python's core for pro"
 # course2 = 'python for "pros'
 # # for email
 # EmailMessage = '''
@@ -47,7 +47,7 @@
 # print(new_curve)
 # plus = 'Jennifer'
 # print(plus[1:-1])
-# # formated strings
+# # formatted strings
 # first = 'John'
 # last = 'Smith'
 # message = first + ' [' + last  + '] is a coder'
@@ -63,13 +63,13 @@
 # print(meme.upper())
 # # for lowercase
 # print(meme.lower())
-# # to find the index or sequense of characters
+# # to find the index or sequence of characters
 # print(meme.find('o'))
 # # to replace an item(in a string)
 # print(meme.replace('pros', 'experts'))
 # # to confirm an item(booleans)
 # print('python' in meme)
-# # arithmethic operations
+# # arithmetic operations
 # print(10 + 3)
 # print(10 // 3)
 # print(10 ** 3)
@@ -149,7 +149,7 @@
 #     print("name looks good!")
 
 
-# formated by myself
+# formatted by myself
 # name = input('what is your name? ')
 # if len(name) < 3:
 #     print("name must be at least 3 characters")
@@ -178,11 +178,11 @@
 
 # # guessing game
 # secret_number = 9
-# giuess_count = 0
+# guess_count = 0
 # guess_limit = 3
-# while giuess_count < guess_limit:
+# while guess_count < guess_limit:
 #     guess = int(input('guess: '))
-#     giuess_count += 1
+#     guess_count += 1
 #     if guess == secret_number:
 #         print('You Won!')
 #         break
@@ -207,16 +207,16 @@
 #     else:
 #         print("sorry, type 'help' for support")
 
-# # writing to=he above code in a more professional way
+# # writing to=he above codes in a more professional way
 # command = ""
 # while True:
 #     command = input("> ").lower()
 #     if command == "start":
 #         print("car started...Ready to go")
-        
+
 #     elif command == "stop":
 #         print("car stopped.")
-        
+
 #     elif command == "help":
 #         print("""
 # start - to start the car
@@ -403,7 +403,7 @@
 # coordinates = (1, 2, 3)
 # x = coordinates[0]
 # y = coordinates[1]
-# # instaed of writing this long line of code by coing the following
+# # instead of writing this long line of code by coding the following
 # x, y, z = coordinates
 # print(x)
 # print(z)
@@ -467,7 +467,7 @@
 # for character in Amount:
 #     Amount += digits_mapping.get(character, "!") + " "
 # print(Amount)
-# # go back to tiime 2:29:17
+# # go back to time 2:29:17
 # message = input(">")
 # words = message.split(' ')
 # print(words)
@@ -483,8 +483,8 @@
 # greet_user("inkiki", "clark")
 # print("finish")
 
-# # parameters these are placeholders of a defined in a function for recieving information
-# # argument are the pieces of information suppplied or recieved
+# # parameters these are placeholders of a defined in a function for receiving information
+# # argument are the pieces of information supplied or received
 
 # # keyword argument
 # # return values
@@ -539,7 +539,7 @@
 # print(point2.x)
 
 # # constructor
-# # a xonstructor is a function that get called at the time of creating an object
+# # a constructor is a function that get called at the time of creating an object
 # class Point:
 #     def __init__(self, x, y):
 #         self.x = x
@@ -572,21 +572,21 @@
 # john = Person("John smith")
 # # print(john.name)
 # john.talk()
-# # person = Person('james', 'goodnews')
+# # person = Person('james', 'goodness')
 # bob = Person("VTU PLUS")
 # bob.talk()
 
 # inheritance in python
-#  DRY DONOT REPEAT YOURSELF
+#  DRY DON'T REPEAT YOURSELF
 
 # # parent class
-# class Mammal:
+#  Mammal:
 #     def walk(self):
 #         print("walk")
 
 
-#  # child class which inherite functions from parrents class
-# class Dog(Mammal):
+#  # child class which inherit functions from parents class
+#  Dog(Mammal):
 #     pass
 
 # class Cat(Mammal):
@@ -597,7 +597,7 @@
 # cat1 = Cat()
 # cat1.walk()
 
-# # to add more atributes related to a specific item
+# # to add more attributes related to a specific item
 # class Dog(Mammal):
 #     def bark(self):
 #         print("bark")
@@ -666,7 +666,7 @@
 
 
 # class Dice:
-#     def roll (seld):
+#     def roll (self):
 #         first = random.randint(1, 6)
 #         second = random.randint(1, 6)
 #         return first, second
@@ -680,7 +680,7 @@
 # path = Path("ecommerce")
 # print(path.exists())
 
-# # to add a driectory to a package
+# # to add a directory to a package
 # path = Path("emails")
 # # the below stands for MAKE DIRECTORY
 # print(path.mkdir())
@@ -688,13 +688,15 @@
 # path = Path()
 # for file in path.glob('*'):
 #     print(file)    
-# Pypip and Pip
-# excel spreedsheet processing
+# Py-pip and Pip
+# Excel spreadsheet processing
 import openpyxl as xl
+from openpyxl.chart import Reference, BarChart
+
 wb = xl.load_workbook('transactions.xlsx')
 sheet = wb['Sheet1']
 cell = sheet['a1']
-cell = sheet.cell(1, 1)
+# cell = sheet.cell(1, 1)
 print(cell.value)
 for row in range(2, sheet.max_row + 1):
     cell = sheet.cell(row, 3)
@@ -703,10 +705,10 @@ for row in range(2, sheet.max_row + 1):
     corrected_price_cell.value = corrected_price
 
 values = Reference(sheet,
-        min_row=2,
-        max_row=sheet.max_row,
-        min_col=4,
-        mx_col=4)
+                   min_row=2,
+                   min_col=4,
+                   max_row=sheet.max_row,
+                   max_col=4)
 
 chart = BarChart()
 chart.add_data(values)
