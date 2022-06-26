@@ -148,6 +148,7 @@
 # else:
 #     print("name looks good!")
 
+
 # formated by myself
 # name = input('what is your name? ')
 # if len(name) < 3:
@@ -225,9 +226,6 @@
 #         break
 #     else:
 #         print("sorry, type 'help' for support")
-
-
-
 
 # command = ""
 # started = False
@@ -581,35 +579,35 @@
 # inheritance in python
 #  DRY DONOT REPEAT YOURSELF
 
-# parent class
-class Mammal:
-    def walk(self):
-        print("walk")
+# # parent class
+# class Mammal:
+#     def walk(self):
+#         print("walk")
 
 
- # child class which inherite functions from parrents class
-class Dog(Mammal):
-    pass
+#  # child class which inherite functions from parrents class
+# class Dog(Mammal):
+#     pass
 
-class Cat(Mammal):
-    pass
+# class Cat(Mammal):
+#     pass
 
-dog1 = Dog()
-dog1.walk()
-cat1 = Cat()
-cat1.walk()
+# dog1 = Dog()
+# dog1.walk()
+# cat1 = Cat()
+# cat1.walk()
 
-# to add more atributes related to a specific item
-class Dog(Mammal):
-    def bark(self):
-        print("bark")
+# # to add more atributes related to a specific item
+# class Dog(Mammal):
+#     def bark(self):
+#         print("bark")
 
-class Cat(Mammal):
-    def smilie(self):
-        print("smilie")
+# class Cat(Mammal):
+#     def smilie(self):
+#         print("smilie")
 
-cat1 = Cat()
-cat1.smilie()
+# cat1 = Cat()
+# cat1.smilie()
 
 # modules in python
 # we use modules to organise our codes just like sections in the super market
@@ -620,8 +618,98 @@ cat1.smilie()
 # def lbs_to_kg(weight):
 #     return weight * 0.45
 
-import converters
-from converters import
+# import converters
+# from converters import kg_to_lbs
 
-print(converters.kg_to_lbs(200))
-print(converters.lbs_to_kg(444))
+
+# print(converters.kg_to_lbs(200))
+# print(converters.lbs_to_kg(444))
+
+# import utilities
+# from utilities import find_max
+# numbers = [50, 40, 10, 790]
+# max = find_max(numbers)
+# print(max)
+# # packages
+# #  packages are another of organizing our code
+# # a package is a container for multiple modules
+# # in file system term, it is a directory or a folder
+# import ecommerce.shipping
+# ecommerce.shipping.calc_shipping()
+# #  to make the code look simple
+# from ecommerce.shipping import calc_shipping
+
+# calc_shipping()
+# calc_shipping()
+# calc_shipping()
+# calc_shipping()
+
+# # to access all functions inside a module in a package 
+# from ecommerce import shipping
+
+# shipping.calc_shipping()
+# # generating random values
+# import random
+
+# for i in range(3):
+#     print(random.random())
+# # to generate random values within a specific range
+# for m in range(3):
+#     print(random.randint(10, 20))
+# # making a random selection
+# members = ['james', 'martha', 'bob', 'classic']
+# leader = random.choice(members)
+# print(leader)
+
+# # rolling a dice
+# import random
+
+
+# class Dice:
+#     def roll (seld):
+#         first = random.randint(1, 6)
+#         second = random.randint(1, 6)
+#         return first, second
+
+
+# dice = Dice()
+# print(dice.roll())
+# # files and directory
+# from pathlib import Path
+
+# path = Path("ecommerce")
+# print(path.exists())
+
+# # to add a driectory to a package
+# path = Path("emails")
+# # the below stands for MAKE DIRECTORY
+# print(path.mkdir())
+# to search for files in a directory
+# path = Path()
+# for file in path.glob('*'):
+#     print(file)    
+# Pypip and Pip
+# excel spreedsheet processing
+import openpyxl as xl
+wb = xl.load_workbook('transactions.xlsx')
+sheet = wb['Sheet1']
+cell = sheet['a1']
+cell = sheet.cell(1, 1)
+print(cell.value)
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9
+    corrected_price_cell = sheet.cell(row, 4)
+    corrected_price_cell.value = corrected_price
+
+values = Reference(sheet,
+        min_row=2,
+        max_row=sheet.max_row,
+        min_col=4,
+        mx_col=4)
+
+chart = BarChart()
+chart.add_data(values)
+sheet.add_data(chart, 'e2')
+
+wb.save('transactions2.xlsx')
