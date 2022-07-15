@@ -580,37 +580,46 @@
 #  DRY DON'T REPEAT YOURSELF
 
 # # parent class
-#  Mammal:
+# class Mammal:
 #     def walk(self):
 #         print("walk")
-
-
-#  # child class which inherit functions from parents class
-#  Dog(Mammal):
+#
+#
+# # child class which inherit functions from parents class
+#
+#
+# class Dog(Mammal):
 #     pass
-
+#
+#
 # class Cat(Mammal):
 #     pass
-
+#
+#
 # dog1 = Dog()
 # dog1.walk()
 # cat1 = Cat()
 # cat1.walk()
-
+#
+#
 # # to add more attributes related to a specific item
+#
+#
 # class Dog(Mammal):
 #     def bark(self):
 #         print("bark")
-
+#
+#
 # class Cat(Mammal):
 #     def smilie(self):
 #         print("smilie")
-
+#
+#
 # cat1 = Cat()
 # cat1.smilie()
 
 # modules in python
-# we use modules to organise our codes just like sections in the super market
+# we use modules to organise our codes just like sections in the supermarket
 
 # def kg_to_lbs(weight):
 #     return weight / 0.45
@@ -690,28 +699,92 @@
 #     print(file)    
 # Py-pip and Pip
 # Excel spreadsheet processing
-import openpyxl as xl
-from openpyxl.chart import Reference, BarChart
 
-wb = xl.load_workbook('transactions.xlsx')
-sheet = wb['Sheet1']
-cell = sheet['a1']
+#
+# import openpyxl as xl
+# from openpyxl.chart import BarChart, Reference
+#
+# wb = xl.load_workbook('transactions.xlsx')
+# sheet = wb['Sheet1']
+# cell = sheet['a1']
 # cell = sheet.cell(1, 1)
-print(cell.value)
-for row in range(2, sheet.max_row + 1):
-    cell = sheet.cell(row, 3)
-    corrected_price = cell.value * 0.9
-    corrected_price_cell = sheet.cell(row, 4)
-    corrected_price_cell.value = corrected_price
+# print(cell.value)
+# for row in range(2, sheet.max_row + 1):
+#     cell = sheet.cell(row, 3)
+#     corrected_price = cell.value * 0.9
+#     corrected_price_cell = sheet.cell(row, 4)
+#     corrected_price_cell.value = corrected_price
+#
+#     values = Reference(sheet,
+#                        min_row=2,
+#                        max_row=sheet.max_row,
+#                        min_col=4,
+#                        max_col=4)
+#
+# chart = BarChart()
+# chart.add_data(values)
+# sheet.add_chart(chart, 'e2')
+#
+# wb.save('transactions2.xlsx')
 
-values = Reference(sheet,
-                   min_row=2,
-                   min_col=4,
-                   max_row=sheet.max_row,
-                   max_col=4)
 
-chart = BarChart()
-chart.add_data(values)
-sheet.add_data(chart, 'e2')
+# import openpyxl as xl
+# from openpyxl.chart import BarChart, Reference
+#
+#
+# def process_workbook(filename):
+#     wb = xl.load_workbook(filename)
+#     sheet = wb['Sheet1']
+#     cell = sheet['a1']
+#     # cell = sheet.cell(1, 1)
+#     print(cell.value)
+#     for row in range(2, sheet.max_row + 1):
+#         cell = sheet.cell(row, 3)
+#         corrected_price = cell.value * 0.9
+#         corrected_price_cell = sheet.cell(row, 4)
+#         corrected_price_cell.value = corrected_price
+#
+#     values = Reference(sheet,
+#                        min_row=2,
+#                        max_row=sheet.max_row,
+#                        min_col=4,
+#                        max_col=4)
+#
+#     chart = BarChart()
+#     chart.add_data(values)
+#     sheet.add_data(chart, 'e2')
+#     wb.save(filename)
 
-wb.save('transactions2.xlsx')
+# machine learning
+# numpy
+# pandas
+# scikit-learn
+
+#
+#
+# another_list = input("another_list: ")
+# digits_mapping = {
+#     "0": "Zero",
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four",
+#     "5": "Five",
+#     "6": "Six",
+#     "7": "Seven",
+#     "8": "Eight",
+#     "9": "Nine",
+#     "+": "Plus"
+# }
+# output = ""
+# for character in another_list:
+#     output += digits_mapping.get(character, "!") + " "
+# print(output)
+# print("your new number is " + output)
+
+import pandas as pd
+df = pd.read_csv('music.csv')
+print(df.values)
+print(df.shape)
+print(df.describe())
+print(df.head(5))
