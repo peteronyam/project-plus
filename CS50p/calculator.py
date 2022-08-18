@@ -25,58 +25,61 @@
 # print(f"{m:,}")
 
 
-# def main():
-#     x = int(input("what's x? "))
-#     print("x squared is", square(x))
-#
-# def square(n):
-#     return n * n
-#
-# main()
+def main():
+    x = int(input("what's x? "))
+    print("x squared is", square(x))
+
+
+def square(n):
+    return n + n
+
+
+if __name__ == "__main__":
+    main()
 
 # compare.py
-
-mac = int(input("what's the value of mac? "))
-jame = int(input("what's the value of jame? "))
-# making all if
-if mac < jame:
-    print("mac is less than jame")
-if mac > jame:
-    print("mac is greater than jame")
-if mac == jame:
-    print("mac is equal jame")
-
-# adding elif
-if mac < jame:
-    print("mac is less than jame")
-elif mac > jame:
-    print("mac is greater than jame")
-elif mac == jame:
-    print("mac is equal jame")
-
-# adding else
-if mac < jame:
-    print("mac is less than jame")
-elif mac > jame:
-    print("mac is greater than jame")
-else:
-    print("mac is equal jame")
-
-# adding or
-if mac < jame or mac > jame:
-    print("mac not equal to jame")
-else:
-    print("mac is equal jame")
-
-# using not equal to
-if mac != jame:
-    print("mac not equal to jame")
-else:
-    print("mac is equal jame")
-
-# using equal equal (==)
-if mac == jame:
-    print("mac is equal jame")
-else:
-    print("mac not equal to jame")
-# and
+#
+# mac = int(input("what's the value of mac? "))
+# jame = int(input("what's the value of jame? "))
+# # making all if
+# if mac < jame:
+#     print("mac is less than jame")
+# if mac > jame:
+#     print("mac is greater than jame")
+# if mac == jame:
+#     print("mac is equal jame")
+#
+# # adding elif
+# if mac < jame:
+#     print("mac is less than jame")
+# elif mac > jame:
+#     print("mac is greater than jame")
+# elif mac == jame:
+#     print("mac is equal jame")
+#
+# # adding else
+# if mac < jame:
+#     print("mac is less than jame")
+# elif mac > jame:
+#     print("mac is greater than jame")
+# else:
+#     print("mac is equal jame")
+#
+# # adding or
+# if mac < jame or mac > jame:
+#     print("mac not equal to jame")
+# else:
+#     print("mac is equal jame")
+#
+# # using not equal to
+# if mac != jame:
+#     print("mac not equal to jame")
+# else:
+#     print("mac is equal jame")
+#
+# # using equal equal (==)
+# if mac == jame:
+#     print("mac is equal jame")
+# else:
+#     print("mac not equal to jame")
+# # and
