@@ -25,20 +25,20 @@
 # print(f"{m:,}")
 
 
-def main():
-    x = int(input("what's x? "))
-    print("x squared is", square(x))
-
-
-def square(n):
-    return n + n
-
-
-if __name__ == "__main__":
-    main()
+# def main():
+#     x = int(input("what's x? "))
+#     print("x squared is", square(x))
+#
+#
+# def square(n):
+#     return n + n
+#
+#
+# if __name__ == "__main__":
+#     main()
 
 # compare.py
-#
+# #
 # mac = int(input("what's the value of mac? "))
 # jame = int(input("what's the value of jame? "))
 # # making all if
@@ -83,3 +83,19 @@ if __name__ == "__main__":
 # else:
 #     print("mac not equal to jame")
 # # and
+
+
+def main():
+    name = ("what is your name? ")
+    # result = hello(name)
+    # print(result)
+    # or we can just do it this way
+    print("hello(name)")
+
+
+def hello(to="world"):
+    return f"hello, {to}"
+
+
+if __name__=="__main__":
+    main()
