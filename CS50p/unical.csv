@@ -1,8 +1,10 @@
+name,score,grade,remark
 james cla,70,A,passed
 kasty,76,A,passed
 coady,68,B,passed
-jennet,48,C,passed
-femi ode,86,A,passed
+jennet,48,C,"passed, your score is though below the
+average but managed to escape"
+femi ode,86,A,"passed, with the highest score in the class"
 kelly,55,C,passed
 pink,69,B,passed
 prince,60,B,passed

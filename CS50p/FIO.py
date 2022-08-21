@@ -141,17 +141,36 @@ students = []
 #           f"Congratulations, {mark['student_name']}\n"
 #           f"you {mark['remark']}")
 #
-# # re-remodifying the code
+# # # re-remodifying the code
+# marks = []
+#
+# with open("unical.csv") as file:
+#     for line in file:
+#         student_name, scores, grades, remark = line.rstrip().split(",")
+#         mark = {"student_name": student_name, "scores": scores, "grades": grades, "remark": remark}
+#         marks.append(mark)
+#
+# for mark in sorted(marks, key=lambda mark: mark["student_name"], reverse=True):
+#     print(f"{mark['student_name']} you scored {mark['scores']} with Grade {mark['grades']}\n"
+#           f"Congratulations, {mark['student_name']}\n"
+#           f"you {mark['remark']}")
+# # this code is working perfectly well
+# 21:08:2022
+# modifying the above code to enable is read the
+# document with double quotes
+import csv
 marks = []
 
 with open("unical.csv") as file:
-    for line in file:
-        student_name, scores, grades, remark = line.rstrip().split(",")
-        mark = {"student_name": student_name, "scores": scores, "grades": grades, "remark": remark}
-        marks.append(mark)
+    reader = csv.reader(file)
+    for student_name, scores, grades, remark in reader:
+        marks.append({"student_name": student_name, "scores": scores, "grades": grades, "remark": remark})
+
 
 for mark in sorted(marks, key=lambda mark: mark["student_name"], reverse=True):
     print(f"{mark['student_name']} you scored {mark['scores']} with Grade {mark['grades']}\n"
           f"Congratulations, {mark['student_name']}\n"
           f"you {mark['remark']}")
+# all of the above code was before adding headers to it
 
+# move to FIO2 to see the results after adding headers
