@@ -30,12 +30,42 @@
 # print(f"hello, {name}\nyour twitter username is: {username}")
 
 # modifying to allow other input work very well
-import re
+# using re.sub() to clean up the code
+# import re
+# from datetime import datetime
 
-url = input("URL: ").strip()
-
-username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
-print(f"username: {username}")
+# import today as today
+#
+# url = input("URL: ").strip()
+#
+# username = re.sub(r"^(https?://)?(www\.)?twitter\.com/", "", url)
+# print(f"username: {username}")
 
 # NOTE: (https?://)?(www\.)? the question mark here
 # refers to optional input from the user
+
+# using re.search()
+#
+# import re
+
+# url = input("URL: ").strip()
+
+# import xlsxwriter
+#
+# def linest(path):
+#     workbook = xlsxwriter.workbook(path)
+#     sheet = workbook.add_worksheet(name="sparky")
+#     spark_styles =[{'range': 'sparkkl!A2:E2',
+#                     'markers': True},
+#                    {'range': 'sparky!A2:E2',
+#                     'type': 'coiumn',
+#                     'style': 12}
+#                    {'range': 'sparky!A3:E3',
+#                     'tyle': 'win_loss',
+#                     'negative_points': True}
+#                    ]
+#     data = [[-5, 5, 3, -2, 0,],
+#             [50, 40, 44, 20, 35],
+#             ]
+
+print(True and True)
