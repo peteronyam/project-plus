@@ -45,27 +45,26 @@
 # refers to optional input from the user
 
 # using re.search()
-#
-# import re
 
+import re
+#
 # url = input("URL: ").strip()
-
-# import xlsxwriter
 #
-# def linest(path):
-#     workbook = xlsxwriter.workbook(path)
-#     sheet = workbook.add_worksheet(name="sparky")
-#     spark_styles =[{'range': 'sparkkl!A2:E2',
-#                     'markers': True},
-#                    {'range': 'sparky!A2:E2',
-#                     'type': 'coiumn',
-#                     'style': 12}
-#                    {'range': 'sparky!A3:E3',
-#                     'tyle': 'win_loss',
-#                     'negative_points': True}
-#                    ]
-#     data = [[-5, 5, 3, -2, 0,],
-#             [50, 40, 44, 20, 35],
-#             ]
+# name_match = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)
+# if name_match:
+#     print(f"username:", name_match.group(1))
+#
+# fixing the error from the name_match.group(1 to group(2))
 
-print(True and True)
+url = input("URL: ").strip()
+
+name_match = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)
+if name_match:
+    print(f"username:", name_match.group(2))
+
+# using the :=
+
+url = input("URL: ").strip()
+
+if name_match := re.search(r"^https?://(?:www\.)?twitter\.com/([a-z0-9_]+)$", url, re.IGNORECASE):
+    print(f"username:", name_match.group(2))
