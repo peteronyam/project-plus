@@ -144,10 +144,6 @@
 
 class Student:
     def __init__(self, name, house):
-        if not name:
-            raise ValueError("Missing name")
-        if house not in ["cross river state", "delta state", "abuja state", "kogi state"]:
-            raise ValueError("Invalid state")
         self.name = name
         self.house = house
 
@@ -156,13 +152,13 @@ class Student:
 
     @property
     def name(self):
-        return self.name
+        return self._name
 
     @name.setter
     def name(self, name):
         if not name:
-            raise ValueError("missing name")
-
+            raise ValueError("Missing name")
+        self._name = name
 
     # getter
     @property
@@ -183,10 +179,10 @@ def main():
 
 
 def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    print(Student(name, house))
+            name = input("Name: ")
+            house = input("House: ")
+            print(Student(name, house))
 
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
