@@ -31,7 +31,7 @@
 # if __name__=="__main__":
 #     main()
 
-# we can aswell use this method
+# we can as well use this method
 
 # def main():
 #     student = get_student()
@@ -70,8 +70,79 @@
 
 # modifying with classes and checking the correctness and data
 
+#
+# class Student():
+#     def __init__(self, name, house):
+#         if not name:
+#             raise ValueError("Missing name")
+#         if house not in ["cross river state", "delta state", "abuja state", "kogi state"]:
+#             raise ValueError("Invalid state")
+#         self.name = name
+#         self.house = house
+#
+#
+# def main():
+#     student = get_student()
+#     print(f"{student.name} from {student.house}")
+#
+#
+# def get_student():
+#     name = input("Name: ")
+#     house = input("House: ")
+#     return Student(name, house)
+#
+#
+# if __name__=="__main__":
+#     main()
+#
+#
 
-class Student():
+# class Student:
+#     def __init__(self, name, house, trenz):
+#         if not name:
+#             raise ValueError("Missing name")
+#         if house not in ["cross river state", "delta state", "abuja state", "kogi state"]:
+#             raise ValueError("Invalid state")
+#         self.name = name
+#         self.house = house
+#         self.trenz = trenz
+#
+#     def __str__(self):
+#         return f"{self.name} from {self.house}"
+#
+#     def unit(self):
+#         match self.trenz:
+#             case "numb":
+#                 return "corn"
+#             case "num":
+#                 return "jamz"
+#             case "kim":
+#                 return "music"
+#             case "lime":
+#                 return "links"
+#             case _:
+#                 return "typeon"
+#
+#
+#
+# def main():
+#     student = get_student()
+#     print("expected tremzc!")
+#     print(student.unit())
+#
+#
+# def get_student():
+#     name = input("Name: ")
+#     house = input("House: ")
+#     trenz =  input("trenz! ")
+#     return Student(name, house, trenz)
+#
+#
+# if __name__ == "__main__":
+#     main()
+
+
+class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Missing name")
@@ -80,17 +151,42 @@ class Student():
         self.name = name
         self.house = house
 
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+    @property
+    def name(self):
+        return self.name
+
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("missing name")
+
+
+    # getter
+    @property
+    def house(self):
+        return self._house
+
+    # setter
+    @house.setter
+    def house(self, house):
+        if house not in ["cross river state", "delta state", "abuja state", "kogi state"]:
+            raise ValueError("Invalid state")
+        self._house = house
+
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
 
 
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    return Student(name, house)
+    print(Student(name, house))
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
