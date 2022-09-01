@@ -53,32 +53,71 @@
 
 # mdifying and simplifying the code with opertor overlaoding
 
-class Vault:
-    def __init__(self, galleons=0, sickles=0, knuts=0):
-        self.galleons = galleons
-        self.sickles = sickles
-        self.knuts = knuts
+# class Vault:
+#     def __init__(self, galleons=0, sickles=0, knuts=0):
+#         self.galleons = galleons
+#         self.sickles = sickles
+#         self.knuts = knuts
+#
+#
+#     def __str__(self):
+#         return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} knuts"
+#
+#
+#     def __add__(self, other):
+#         galleons = self.galleons + other.galleons
+#         sickles = self.sickles + other.sickles
+#         knuts = self.knuts + other.knuts
+#         return Vault(galleons, sickles, knuts)
+#
+#
+# painter = Vault(100, 500, 430)
+# print(painter)
+#
+# font = Vault(200, 50, 90)
+# print(font)
+#
+# # to combine to vaults of two using the overload operator
+#
+#
+# total = painter + font
+# print(total)
 
 
-    def __str__(self):
-        return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} knuts"
+balance = 0
+
+depositi = input("Deposit amount: ")
+withdrawi = input("withdrawal amount: ")
+
+def main():
+    # print("Balance:", balance)
+    global depositi, withdrawi
+    print("what type of transaction do you want to perform?\nd = deposit\nw = withdrawal")
+    type = input("(D/W):").lower()
+    d = depositi
+    w = withdrawi
+    for d in type:
+        print(depositi)
+        break
+    else:
+        print(withdrawi)
 
 
-    def __add__(self, other):
-        galleons = self.galleons + other.galleons
-        sickles = self.sickles + other.sickles
-        knuts = self.knuts + other.knuts
-        return Vault(galleons, sickles, knuts)
+    print("Balance:", balance)
 
 
-painter = Vault(100, 500, 430)
-print(painter)
-
-font = Vault(200, 50, 90)
-print(font)
-
-# to combine to vaults of two using the overload operator
+def deposit(d):
+    global depositi, withdrawi
+    global balance
+    balance += d
 
 
-total = painter + font
-print(total)
+def withdraw(w):
+    global depositi, withdrawi
+    global balance
+    balance -= w
+
+
+
+if __name__=="__main__":
+    main()
