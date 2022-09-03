@@ -318,18 +318,78 @@
 
 # using enumerate
 
-kind = ["name", "james cla", "score", "grade", "A", "remark", "passed"]
+# kind = ["name", "james cla", "score", "grade", "A", "remark", "passed"]
+#
+# for i, kind in enumerate(kind):
+#     print(i + 1, kind)
 
-for i, kind in enumerate(kind):
-    print(i + 1, kind)
+# #using generators
+# #sleep.py
+# def main():
+#     n = int(input("what is n? "))
+#     for i in range(n):
+#         print("HR" * i)
+#
+#
+# if __name__ =="__main__":
+#     main()
 
-# using generators
-# sleep.py
-def main():
-    n = int(input("what is n? "))
-    for i in range(n):
-        print("HR" * i)
+# # modifying sleepy.py
+# def main():
+#     n = int(input("what is n? "))
+#     for i in range(n):
+#         print(shop(i))
+#
+#
+# def shop(n):
+#     return "HR" * n
+#
+#
+# if __name__=="__main__":
+#     main()
+#
+# #remodifying
 
+# def main():
+#     n = int(input("what is n? "))
+#     for s in shop(n):
+#         print(s)
+#
+#
+# def shop(n):
+#     store = []
+#     for i in range(n):
+#         store.append("HR" *(i + 1))
+#     return store
+#
+#
+# if __name__=="__main__":
+#     main()
 
-if __name__ =="__main__":
-    main()
+# # modifying the above so the memory can carry
+#
+# def main():
+#     n = int(input("what is n? "))
+#     for s in shop(n):
+#         print(s)
+#
+#
+# def shop(n):
+#     for i in range(n):
+#         yield "HR" * i
+#
+#
+# if __name__=="__main__":
+#     main()
+
+# say.py
+# text to speach
+
+import cowsay
+import pyttsx3
+
+letme = pyttsx3.init()
+this = input("what? ")
+cowsay.dragon(this)
+letme.say(this)
+letme.runAndWait()
