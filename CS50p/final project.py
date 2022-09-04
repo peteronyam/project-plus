@@ -390,6 +390,6 @@ import pyttsx3
 
 letme = pyttsx3.init()
 this = input("what? ")
-cowsay.dragon(this)
+cowsay.cow(this)
 letme.say(this)
 letme.runAndWait()
