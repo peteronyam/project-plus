@@ -1,0 +1,26 @@
+ form{
+       background-color: darkgrey;
+       width: 400px;
+       height: 250px;
+       text-align: center;
+       padding: 25px;
+       margin: 20px;
+       font-family: 'Ubuntu';
+       }
+ body{
+       background-color: lightgrey;
+       margin: 20px;
+       }
+
+#font
+start{
+    font-family: Arial, sans-serif;
+}
+    h1,h2,h3{
+        font-family: Rockwell, "Times New Roman", serif;
+    }
+    ol,ul{
+        color: white;
+        font-family: 'Ubuntu';
+        font-size: 25px;
+    }
