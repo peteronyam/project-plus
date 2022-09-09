@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <meta charset="UTF-8">
     <title>form</title>
     <style>
@@ -21,62 +23,61 @@
 <body>
 <a href="start.html">Home</a>
 <form>
-    <div id="form">
-    <input type="text" placeholder="First name" name="first_name">
-    <input type="text" placeholder="surname" name="surname">
-    <input type="password" placeholder="password" name="password">
-        <input name="Gender" list="gender" placeholder="Gender">
-        <datalist id="gender">
-            <option value="Male">
-            <option value="Female">
-            <option value="Prefer not to say">
-        </option>
-        </datalist>
-        <input name="country" list="countries" placeholder="country">
-        <datalist id="countries">
-            <option value="Nigeria">
-            <option value="England">
-            <option value="paris">
-            <option value="london">
-            <option value="albenia">
-            <option value="armenia">
-            <option value="angola">
-            <option value="algeria">
-            <option value="andora">
-            <option value="basemin">
-            <option value="afghan">
-            <option value="swizz">
-            <option value="turky">
-            <option value="rome">
-            <option value="helsinki">
-            <option value="denva">
-            <option value="leone">
-            <option value="tokyo">
-            <option value="dubai">
-            <option value="haiti">
-            <option value="ghana">
-            <option value="Toronto">
-        </option>
-        </datalist>
-        <input type="image">
-        <input type="range" property="100">
-        <input type="file">
-        <input type="checkbox" placeholder="">
-        <input type="date">
-        <input type="button" placeholder="button">
-    <input type="submit">
-    </div>
-    <div>
-        Favorite color
-        <input name="colour" type="radio" value="blue">blue
-        <input name="color" type="radio" value="red">red
-        <input name="color" type="radio" value="green">green
-        <input name="color" type="radio" value="other">other
-    </div>
-    <div>
+    <table>
+        <div class="sign">
+        <input type="text" placeholder="First name" name="first_name">
+        <input type="text" placeholder="surname" name="surname">
+        <input type="password" placeholder="password" name="password">
+            <input name="Gender" list="gender" placeholder="Gender">
+            <datalist id="gender">
+                <option value="Male">
+                <option value="Female">
+                <option value="Prefer not to say">
+            </option>
+            </datalist>
+            <input name="country" list="countries" placeholder="country">
+            <datalist id="countries">
+                <option value="Nigeria">
+                <option value="England">
+                <option value="paris">
+                <option value="london">
+                <option value="albenia">
+                <option value="armenia">
+                <option value="angola">
+                <option value="algeria">
+                <option value="andora">
+                <option value="basemin">
+                <option value="afghan">
+                <option value="swizz">
+                <option value="turky">
+                <option value="rome">
+                <option value="helsinki">
+                <option value="denva">
+                <option value="leone">
+                <option value="tokyo">
+                <option value="dubai">
+                <option value="haiti">
+                <option value="ghana">
+                <option value="Toronto">
+            </option>
+            </datalist>
+            <input type="image">
+            <input type="range" property="100">
+            <input type="file">
+            <input type="checkbox" placeholder="">
+            <input type="date">
+            <input type="button" placeholder="button">
+        <input type="submit">
 
-    </div>
-
+        </div>
+        <div class="in">
+            Favourite colour
+            <input name="colour" type="radio" value="blue" class="blue">blue
+            <input name="color" type="radio" value="red" class="red">red
+            <input name="color" type="radio" value="green" class="green">green
+            <input name="color" type="radio" value="other">other
+        </div>
+    </table>
 </form>
 </body>
 </html>
