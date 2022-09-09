@@ -29,7 +29,7 @@ start{
     h1,h2,h3{
         font-family: Rockwell, "Times New Roman", serif;
     }
-    ol,ul{
+    ul > li{
         border: 4px solid darkgrey;
         color: white;
         font-family: 'Ubuntu';
