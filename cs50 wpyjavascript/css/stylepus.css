@@ -1,0 +1,17 @@
+body {
+            background-color: lightgrey;
+        }
+        hr {
+            background-color:;
+            width: 10%;
+            margin-left:;
+            border-top: dotted darkgrey;
+            border-width: 5px;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+
+        }
+        h1, h3{
+            color: #66bfbf;
+        }
