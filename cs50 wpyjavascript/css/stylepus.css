@@ -1,6 +1,21 @@
-body {
+/*body {
             background-color: lightgrey;
         }
+        */
+@media (min-width: 550px){
+    body{
+        background-color: darkgrey;
+        }
+    img{
+        background-color: gold;
+    }
+}
+@media (max-width: 800px){
+     body{
+    background-color: lightgrey;
+    }
+
+}
         hr {
             background-color:;
             width: 10%;
@@ -15,3 +30,9 @@ body {
         h1, h3{
             color: #66bfbf;
         }
+
+img:hover{
+    border-style: dashed;
+    border-color: #66bfbf;
+    background-color: black;
+}

@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url('images/bnh.jpg');
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.top_container{
+    background-color: #C4C4CE;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 5px;
+
+
+}
+h1{
+    margin: 0px;
+}
+.middle_container{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+.bottom_container{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+.cloud{
+   display; inline;
+   background-color: blue;
+   width: 50px;
+   height: 50px;
+}
+.tim{
+    background-color: blue;
+    width:100%;
+    display: inline;
+}
