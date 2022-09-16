@@ -1,17 +1,19 @@
 body{
-    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url('images/bnh.jpg');
+    background-color: #1E222B
+;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 .top_container{
-    background-color: #C4C4CE;
+    background-color: #525B64;
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 5px;
 
 
 }
+
 h1{
     margin: 0px;
 }
@@ -19,6 +21,8 @@ h1{
     height: 200px;
     width: 200px;
     background-color: white;
+    position: absolute;
+    right: 30px;
 }
 .bottom_container{
     width: 200px;
@@ -36,3 +40,95 @@ h1{
     width:100%;
     display: inline;
 }
+.mk{
+    background-color: tealblue;
+    display: inline;
+   }
+
+span{
+    background-color: skyblue;
+    width: 100%;
+}
+.black{
+    color: navy;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    left: 410px
+
+}
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    right: 415px;
+    margin: 5px;
+}
+
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    display: inline-block;
+ }
+
+ .now{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: inline-block;
+ }
+ .won{
+     width: 200px;
+    height: 200px;
+    background-color: gold;
+    position: absolute;
+    left: 200px;
+ }
+
+ .own{
+     width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: absolute;
+    left: 400px;
+    top: 1105px;
+ }
+ .m{
+    width: 200px;
+    height: 200px;
+    background-color: #7F9AA8
+;
+    position: absolute;
+    top: 200px;
+    left: 210px;
+ }
+ .e{
+    width: 200px;
+    height: 200px;
+    background-color: #525B64;
+    position: absolute;
+    top: 220px;
+    left: 420px;
+ }
+ .w{
+    width: 200px;
+    height: 200px;
+    background-color: #7F9AA8;
+    position: absolute;
+    top: 220px;
+    right: 250px;
+ }
+ .figma{
+    position: absolute;
+    color: #7F9AA8;
+    left: 60px;
+    top:80px;
+ }
