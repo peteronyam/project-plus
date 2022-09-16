@@ -1,7 +1,8 @@
-/*body {
+body {
             background-color: lightgrey;
+            text-align: center;
         }
-        */
+
 @media (min-width: 550px){
     body{
         background-color: darkgrey;
@@ -18,9 +19,9 @@
 }
         hr {
             background-color:;
-            width: 10%;
+            margin: 0 auto 0 auto;
             margin-left:;
-            border-top: dotted darkgrey;
+            border-top: dotted gold;
             border-width: 5px;
             border-bottom: none;
             border-left: none;

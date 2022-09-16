@@ -114,7 +114,7 @@ span{
     width: 200px;
     height: 200px;
     background-color: #525B64;
-    position: absolute;
+    position: fixed;
     top: 220px;
     left: 420px;
  }
