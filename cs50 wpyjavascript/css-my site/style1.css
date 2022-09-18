@@ -1,0 +1,52 @@
+ body{
+            margin: 0;
+            text-align: center;
+            //*
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            *//
+            font-family: 'Ubuntu', sans-serif;
+            }
+        .tops{
+            background-color: grey;
+            width: 100%;
+            height: 625px;
+        }
+
+        .cloud{
+            width: 200x;
+            height: 100px;
+            position: absolute;
+            top: 5px;
+            right: 400px;
+        }
+        .clou{
+            width: 200x;
+            height: 100px;
+            position: absolute;
+            left: 50px;
+            top: 120px;
+        }
+        .first{
+            font-family: 'Sacramento', cursive;
+            font-size: px;
+            position: absolute;
+            top: 95px;
+            right: 600px;
+        }
+        .piy{
+        font-family: system-ui;
+            position: absolute;
+            right: 580px;
+            top: 150px;
+        }
+        .shade{
+            position: absolute;
+            height: 350px;
+            width: 700px;
+            left: 400px;
+            bottom: 0px;
+        }
+        .me{
+            width: 200px;
+            height:200px;
+        }
