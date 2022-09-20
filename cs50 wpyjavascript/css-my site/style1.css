@@ -1,15 +1,32 @@
- body{
-            margin: 0;
+     body, html{
+            margin: 0px;
             text-align: center;
-            //*
+
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            *//
-            font-family: 'Ubuntu', sans-serif;
-            }
+
+        }
+@media (min-width: 550px){
+    body{
+        background-color: lightgrey;
+        }
+    }
+}
+@media (max-width: 800px){
+     body{
+    background-color: white;
+    }
+    .land{
+        margin:0 auto 0 auto;
+        bottom: 0px;
+        background-color: black;
+    }
+
+}
+
         .tops{
             background-color: grey;
             width: 100%;
-            height: 625px;
+            height: 615px;
         }
 
         .cloud{
@@ -27,26 +44,95 @@
             top: 120px;
         }
         .first{
+        margin: 0 auto o auto;
             font-family: 'Sacramento', cursive;
-            font-size: px;
+            font-size: 2rem;
             position: absolute;
             top: 95px;
             right: 600px;
         }
         .piy{
-        font-family: system-ui;
+            font-family: system-ui;
             position: absolute;
-            right: 580px;
+            right: 570px;
             top: 150px;
+            font-size: 1.5rem;
         }
         .shade{
             position: absolute;
-            height: 350px;
-            width: 700px;
-            left: 400px;
+            height: 50%;
+            width: 60%;
+            left: 20%;
             bottom: 0px;
         }
-        .me{
-            width: 200px;
-            height:200px;
+        .land{
+            position: absolute;
+            bottom: 0rem;
+            width: 100%;
+            height: 400px;
+            right: 0px;
         }
+        .prof{
+            width: 25%;
+        }
+        .skill{
+            width: 25%;
+            height: 25%;
+            float: left;
+            margin-right: 30px;
+        }
+        .second{
+            width: 25%;
+            height: 25%;
+            float: right;
+            margin-left: 30px;
+        }
+        /*
+        hr {
+            margin: 0 auto 0 auto;
+            margin-left:;
+            border-top: double #333;
+            width: 30%;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            overflow: visible;
+            height: 5px;
+            }
+        hr:after{
+
+            content: 'peter';
+            padding: 0 0px;
+            top: -13px;
+        }*/
+        hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        width: 40%;
+}
+
+hr:after {
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+.hello{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    display: inline;
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.mi{
+    clear: right;
+}
