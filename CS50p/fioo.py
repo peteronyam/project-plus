@@ -28,19 +28,19 @@
 # #     writer = csv.DictWriter(file, fieldnames=["name", "score"])
 # #     writer.writerow({"name": name, "score": score})
 #
-# # working with image files
+# # working with img files
 # import sys
 #
 # from PIL import Image
 #
-# image = []
+# img = []
 #
 # for arg in sys.argv[1:]:
-#     image = Image.open(arg)
-#     image.append(image)
+#     img = Image.open(arg)
+#     img.append(img)
 #
-# image[0].save(
-#     "cost.gif", save_all=True, append_images=[image[1]], duration=200, loop=0
+# img[0].save(
+#     "cost.gif", save_all=True, append_images=[img[1]], duration=200, loop=0
 # )
 #
 # size = (128, 128)

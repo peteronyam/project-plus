@@ -1,5 +1,5 @@
 body{
-
+    text-align: center;
 }
 .first, .piy, h2{
     color: #66bfbf;
@@ -47,4 +47,23 @@ body{
    -moz-border-radius: 28px;
    border-radius: 28px;
    text-decoration: none;
+}
+.cloud, .clou, .shade{
+    width: 30%;
+    height: 10%;
+}
+.tops{
+    position: cover;
+    margin: auto;
+    padding: auto;
+}
+h1{
+    font-size: 563%;
+}
+.piy{
+    font-size: 280%;
+
+}
+.prof{
+    transform: translatex(-50px);
 }
